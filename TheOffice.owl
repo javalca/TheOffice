@@ -95,9 +95,6 @@ UOC</Literal>
         <ObjectProperty IRI="#genreIs"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAudience"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasChapter"/>
     </Declaration>
     <Declaration>
@@ -536,10 +533,6 @@ UOC</Literal>
         <Literal>Greg Daniels</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasAudience"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasChapter"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -596,10 +589,6 @@ UOC</Literal>
         <Class IRI="#Series"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAudience"/>
-        <Class IRI="#Season"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasChapter"/>
         <Class IRI="#Season"/>
     </ObjectPropertyDomain>
@@ -626,6 +615,10 @@ UOC</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isActincIn"/>
         <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+        <Class IRI="#Series"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFoundIn"/>
@@ -686,6 +679,10 @@ UOC</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isActincIn"/>
         <Class IRI="#Scene"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+        <Class IRI="#Channel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFoundIn"/>
@@ -855,25 +852,6 @@ UOC</Literal>
             </ClassAtom>
         </Head>
     </DLSafeRule>
-    <DLSafeRule>
-        <Body>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAudience"/>
-                <Variable IRI="urn:swrl:var#s"/>
-                <Variable IRI="urn:swrl:var#a"/>
-            </ObjectPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="urn:swrl:var#a"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000000</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#GoodSeason"/>
-                <Variable IRI="urn:swrl:var#s"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/t151651/ontologies/2022/3/Sales</IRI>
@@ -1013,11 +991,6 @@ UOC</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#genreIs</IRI>
         <Literal xml:lang="en">Genres of the serie</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasAudience</IRI>
-        <Literal xml:lang="en">Audience of a season</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
