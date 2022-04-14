@@ -1,0 +1,1009 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"
+    }, {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting"
+    }, {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources"
+    }, {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management"
+    }, {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA"
+    }, {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid23"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid26"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid34"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#n"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "100"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "100000000"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    }, {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid37"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid45"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#n"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "100"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Female"
+    }, {
+      "@value" : "Male"
+    }, {
+      "@value" : "Unknown"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/Sales",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sales department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Antology about The Office.\n\nAuthor: Javier Valls Catalá\n\nUOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Accounting department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the character is a salesman."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Channel broadcasting the series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Chapter of a season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Character of the series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "City where is the office"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country of the city"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Departments of the office"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName" : [ {
+    "@value" : "Rainn Wilson"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "120"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Dwight_Schrute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Genre of the serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If it has a lot of audiance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The human resources department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Location where the chapter takes place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the character apears in more than 100 scenes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Management department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName" : [ {
+    "@value" : "Steve Carell"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "100"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Michael_Scott_(The_Office)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Music played in the scene"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Office of the company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "QA department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reception department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Scenes of a chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Season of the series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "5000001"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1"
+  }, {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "6000000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "70000000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the character apears in less than 100 scenes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series spin off"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy"
+  }, {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute"
+  }, {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1"
+  }, {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime"
+  } ],
+  "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator" : [ {
+    "@value" : "Greg Daniels"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/The_Office_(American_TV_series)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Genres of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Chapters of the season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The characters of the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The scenes of a chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Seasons of the series."
+  }, {
+    "@language" : "en",
+    "@value" : "Serie has seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Spin off of the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The country where the city is placed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "character plays the scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Channels where it is broadcasted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Where the location is founded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The city of the office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Music played in a scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "where the scene takes place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The department where the employee works"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The office where the employee works"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#n",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

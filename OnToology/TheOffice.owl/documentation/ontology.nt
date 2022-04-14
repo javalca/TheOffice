@@ -1,0 +1,591 @@
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice> <http://www.w3.org/2000/01/rdf-schema#comment> "Antology about The Office.\n\nAuthor: Javier Valls Catalá\n\nUOC"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.w3.org/2000/01/rdf-schema#comment> "Genres of the serie"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Chapters of the season"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "The characters of the series."@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.w3.org/2000/01/rdf-schema#comment> "The scenes of a chapter"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Seasons of the series."@en .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie has seasons"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff> <http://www.w3.org/2000/01/rdf-schema#comment> "Spin off of the series."@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the city is placed"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn> <http://www.w3.org/2000/01/rdf-schema#comment> "character plays the scene"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Channels where it is broadcasted"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Where the location is founded"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The city of the office"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying> <http://www.w3.org/2000/01/rdf-schema#comment> "Music played in a scene"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "where the scene takes place"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The department where the employee works"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The office where the employee works"@en .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "100000000"^^<http://www.w3.org/2001/XMLSchema#long> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#long> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Unknown" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Male" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Female" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/Sales
+<http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> <http://www.w3.org/2000/01/rdf-schema#comment> "Sales department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting> <http://www.w3.org/2000/01/rdf-schema#comment> "Accounting department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales> <http://www.w3.org/2000/01/rdf-schema#comment> "If the character is a salesman."@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel> <http://www.w3.org/2000/01/rdf-schema#comment> "Channel broadcasting the series."@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Chapter of a season"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Character of the series"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> <http://www.w3.org/2000/01/rdf-schema#comment> "City where is the office"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country of the city"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> <http://www.w3.org/2000/01/rdf-schema#comment> "Departments of the office"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Genre of the serie"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "If it has a lot of audiance"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources> <http://www.w3.org/2000/01/rdf-schema#comment> "The human resources department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location where the chapter takes place"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "If the character apears in more than 100 scenes"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management> <http://www.w3.org/2000/01/rdf-schema#comment> "Management department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music> <http://www.w3.org/2000/01/rdf-schema#comment> "Music played in the scene"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> <http://www.w3.org/2000/01/rdf-schema#comment> "Office of the company"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA> <http://www.w3.org/2000/01/rdf-schema#comment> "QA department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception> <http://www.w3.org/2000/01/rdf-schema#comment> "Reception department"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene> <http://www.w3.org/2000/01/rdf-schema#comment> "Scenes of a chapter"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Season of the series"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "If the character apears in less than 100 scenes"@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "The series."@en .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff> <http://www.w3.org/2000/01/rdf-schema#comment> "Series spin off"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> "Rainn Wilson" .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> "Male" .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> "120"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Dwight_Schrute"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName> "Steve Carell" .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender> "Male" .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Michael_Scott_(The_Office)"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> "5000001"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> "6000000"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience> "70000000"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season4
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season5
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season6
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season7
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season8
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season9
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City> .
+# 
+# http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime> .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator> "Greg Daniels" .
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/The_Office_(American_TV_series)"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid10 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid24 <http://www.w3.org/2003/11/swrl#body> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#arguments> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/2003/11/swrl#head> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid35 <http://www.w3.org/2003/11/swrl#body> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#arguments> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid43 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/2003/11/swrl#head> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid45 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
