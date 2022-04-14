@@ -1,0 +1,635 @@
+@prefix : <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#> .
+
+<http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice> rdf:type owl:Ontology ;
+                                                                  rdfs:comment """Antology about The Office.
+
+Author: Javier Valls Catalá
+
+UOC"""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs
+:genreIs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Series ;
+         rdfs:range :Genre ;
+         rdfs:comment "Genres of the serie"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter
+:hasChapter rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Season ;
+            rdfs:range :Chapter ;
+            rdfs:comment "Chapters of the season"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter
+:hasCharacter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Series ;
+              rdfs:range :Character ;
+              rdfs:comment "The characters of the series."@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes
+:hasScenes rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Chapter ;
+           rdfs:range :Scene ;
+           rdfs:comment "The scenes of a chapter"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason
+:hasSeason rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Series ;
+           rdfs:range :Season ;
+           rdfs:comment "Seasons of the series."@en ,
+                        "Serie has seasons"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff
+:hasSpinOff rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Series ;
+            rdfs:range :SpinOff ;
+            rdfs:comment "Spin off of the series."@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs
+:hisCountryIs rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :City ;
+              rdfs:range :Country ;
+              rdfs:comment "The country where the city is placed"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn
+:isActincIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Scene ;
+            rdfs:comment "character plays the scene"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn
+:isBroadcastedOn rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Series ;
+                 rdfs:range :Channel ;
+                 rdfs:comment "Channels where it is broadcasted"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn
+:isFoundIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Location ;
+           rdfs:range :City ;
+           rdfs:comment "Where the location is founded"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Office ;
+             rdfs:range :City ;
+             rdfs:comment "The city of the office"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying
+:isPlaying rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Scene ;
+           rdfs:range :Music ;
+           rdfs:comment "Music played in a scene"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace
+:takesPlace rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Scene ;
+            rdfs:range :Location ;
+            rdfs:comment "where the scene takes place"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs
+:worksAs rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Character ;
+         rdfs:range :Department ;
+         rdfs:comment "The department where the employee works"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn
+:worksIn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Character ;
+         rdfs:range :Office ;
+         rdfs:comment "The office where the employee works"@en .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :Series ;
+                      rdfs:range :Channel .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName
+:actorName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Character ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience
+:audience rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Season ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:onDatatype xsd:int ;
+                       owl:withRestrictions ( [ xsd:minInclusive "0"^^xsd:long
+                                              ]
+                                              [ xsd:maxInclusive "100000000"^^xsd:long
+                                              ]
+                                            )
+                     ] .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Character ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:oneOf [ rdf:type rdf:List ;
+                                 rdf:first "Female" ;
+                                 rdf:rest [ rdf:type rdf:List ;
+                                            rdf:first "Male" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "Unknown" ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                               ]
+                   ] .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes
+:numberScenes rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Character ;
+              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator
+:serieCreator rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Series ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain :Character .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/Sales
+<http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> rdf:type owl:Class ;
+                                                             rdfs:subClassOf :Department ;
+                                                             rdfs:comment "Sales department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting
+:Accounting rdf:type owl:Class ;
+            rdfs:subClassOf :Department ;
+            rdfs:comment "Accounting department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales
+:BonusSales rdf:type owl:Class ;
+            rdfs:subClassOf :Character ;
+            rdfs:comment "If the character is a salesman."@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel
+:Channel rdf:type owl:Class ;
+         rdfs:comment "Channel broadcasting the series."@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:comment "Chapter of a season"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Character of the series"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City
+:City rdf:type owl:Class ;
+      rdfs:comment "City where is the office"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Country of the city"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department
+:Department rdf:type owl:Class ;
+            rdfs:comment "Departments of the office"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "Genre of the serie"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason
+:GoodSeason rdf:type owl:Class ;
+            rdfs:subClassOf :Season ;
+            rdfs:comment "If it has a lot of audiance"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources
+:HumanResources rdf:type owl:Class ;
+                rdfs:subClassOf :Department ;
+                rdfs:comment "The human resources department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Location where the chapter takes place"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter
+:MainCharacter rdf:type owl:Class ;
+               rdfs:subClassOf :Character ;
+               owl:disjointWith :SecondaryCharacter ;
+               rdfs:comment "If the character apears in more than 100 scenes"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management
+:Management rdf:type owl:Class ;
+            rdfs:subClassOf :Department ;
+            rdfs:comment "Management department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music
+:Music rdf:type owl:Class ;
+       rdfs:comment "Music played in the scene"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office
+:Office rdf:type owl:Class ;
+        rdfs:comment "Office of the company"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA
+:QA rdf:type owl:Class ;
+    rdfs:subClassOf :Department ;
+    rdfs:comment "QA department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception
+:Reception rdf:type owl:Class ;
+           rdfs:subClassOf :Department ;
+           rdfs:comment "Reception department"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene
+:Scene rdf:type owl:Class ;
+       rdfs:comment "Scenes of a chapter"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "Season of the series"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter
+:SecondaryCharacter rdf:type owl:Class ;
+                    rdfs:subClassOf :Character ;
+                    rdfs:comment "If the character apears in less than 100 scenes"@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series
+:Series rdf:type owl:Class ;
+        rdfs:comment "The series."@en .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff
+:SpinOff rdf:type owl:Class ;
+         rdfs:comment "Series spin off"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#AmazonPrime
+:AmazonPrime rdf:type owl:NamedIndividual ,
+                      :Channel ;
+             :isBroadcastedOn :AmazonPrime .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter1
+:Chapter1 rdf:type owl:NamedIndividual ,
+                   :Chapter ;
+          :hasScenes :Scene1 .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter2
+:Chapter2 rdf:type owl:NamedIndividual ,
+                   :Chapter ;
+          :hasChapter :Scene2 .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Comedy
+:Comedy rdf:type owl:NamedIndividual ,
+                 :Genre .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinNewYork
+:DunderMifflinNewYork rdf:type owl:NamedIndividual ,
+                               :Office ;
+                      :isLocatedIn :NewYork .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinScranton
+:DunderMifflinScranton rdf:type owl:NamedIndividual ,
+                                :Office ;
+                       :isLocatedIn :Scranton .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#DunderMifflinStamford
+:DunderMifflinStamford rdf:type owl:NamedIndividual ,
+                                :Office ;
+                       :isLocatedIn :Stamford .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Dwight_Schrute
+:Dwight_Schrute rdf:type owl:NamedIndividual ,
+                         :Character ;
+                :actorName "Rainn Wilson" ;
+                :gender "Male" ;
+                :numberScenes "120"^^xsd:int ;
+                rdfs:sameAs "https://dbpedia.org/page/Dwight_Schrute"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#FakeDocumentary
+:FakeDocumentary rdf:type owl:NamedIndividual ,
+                          :Genre .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Main_Room
+:Main_Room rdf:type owl:NamedIndividual ,
+                    :Location ;
+           :isLocatedIn :Scranton .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Michael_Scott
+:Michael_Scott rdf:type owl:NamedIndividual ,
+                        :Character ;
+               :actorName "Steve Carell" ;
+               :gender "Male" ;
+               :numberScenes "100"^^xsd:int ;
+               rdfs:sameAs "https://dbpedia.org/page/Michael_Scott_(The_Office)"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#NewYork
+:NewYork rdf:type owl:NamedIndividual ,
+                  :City .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene1
+:Scene1 rdf:type owl:NamedIndividual ;
+        :isLocatedIn :Schrute_Farm .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene2
+:Scene2 rdf:type owl:NamedIndividual ;
+        :isLocatedIn :Main_Room .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Schrute_Farm
+:Schrute_Farm rdf:type owl:NamedIndividual ,
+                       :Location ;
+              :isLocatedIn :Scranton .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scranton
+:Scranton rdf:type owl:NamedIndividual ,
+                   :City .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season1
+:Season1 rdf:type owl:NamedIndividual ,
+                  :Season ;
+         :hasChapter :Chapter1 ,
+                     :Chapter2 ;
+         :audience "5000001"^^xsd:int .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season2
+:Season2 rdf:type owl:NamedIndividual ,
+                  :Season ;
+         :audience "6000000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season3
+:Season3 rdf:type owl:NamedIndividual ,
+                  :Season ;
+         :audience "70000000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season4
+:Season4 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season5
+:Season5 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season6
+:Season6 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season7
+:Season7 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season8
+:Season8 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season9
+:Season9 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Stamford
+:Stamford rdf:type owl:NamedIndividual ,
+                   :City .
+
+
+###  http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#TheOffice
+:TheOffice rdf:type owl:NamedIndividual ,
+                    :Series ;
+           :genreIs :Comedy ,
+                    :FakeDocumentary ;
+           :hasCharacter :Dwight_Schrute ,
+                         :Michael_Scott ;
+           :hasSeason :Season1 ,
+                      :Season2 ;
+           :isBroadcastedOn :AmazonPrime ;
+           :serieCreator "Greg Daniels" ;
+           rdfs:sameAs "https://dbpedia.org/page/The_Office_(American_TV_series)"^^xsd:anyURI .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/t151651/ontologies/2022/3/Sales>
+                :Accounting
+                :HumanResources
+                :Management
+                :QA
+                :Reception
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#n> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/t151651/ontologies/2022/3/Sales> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :BonusSales ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :numberScenes ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#n> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 100 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MainCharacter ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :numberScenes ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#n> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 100 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SecondaryCharacter ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
