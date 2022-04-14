@@ -1,0 +1,1102 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Antology about The Office.
+
+Author: Javier Valls Catalá
+
+UOC</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BonusSales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MainCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Series"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpinOff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#genreIs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAudience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChapter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScenes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpinOff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hisCountryIs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActincIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFoundIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlaying"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#actorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#audience"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberScenes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#serieCreator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmazonPrime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chapter1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chapter2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunderMifflinNewYork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunderMifflinScranton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunderMifflinStamford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FakeDocumentary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Main_Room"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michael_Scott"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewYork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scene1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scene2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Schrute_Farm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scranton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stamford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheOffice"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accounting"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BonusSales"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodSeason"/>
+        <Class IRI="#Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanResources"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MainCharacter"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Management"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QA"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reception"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryCharacter"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
+        <Class IRI="#Accounting"/>
+        <Class IRI="#HumanResources"/>
+        <Class IRI="#Management"/>
+        <Class IRI="#QA"/>
+        <Class IRI="#Reception"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MainCharacter"/>
+        <Class IRI="#SecondaryCharacter"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#AmazonPrime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chapter"/>
+        <NamedIndividual IRI="#Chapter1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chapter"/>
+        <NamedIndividual IRI="#Chapter2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#DunderMifflinNewYork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#DunderMifflinScranton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#DunderMifflinStamford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#FakeDocumentary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Main_Room"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#NewYork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Schrute_Farm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Scranton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Season9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Stamford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Series"/>
+        <NamedIndividual IRI="#TheOffice"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+        <NamedIndividual IRI="#AmazonPrime"/>
+        <NamedIndividual IRI="#AmazonPrime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasScenes"/>
+        <NamedIndividual IRI="#Chapter1"/>
+        <NamedIndividual IRI="#Scene1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChapter"/>
+        <NamedIndividual IRI="#Chapter2"/>
+        <NamedIndividual IRI="#Scene2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DunderMifflinNewYork"/>
+        <NamedIndividual IRI="#NewYork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DunderMifflinScranton"/>
+        <NamedIndividual IRI="#Scranton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DunderMifflinStamford"/>
+        <NamedIndividual IRI="#Stamford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Main_Room"/>
+        <NamedIndividual IRI="#Scranton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Scene1"/>
+        <NamedIndividual IRI="#Schrute_Farm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Scene2"/>
+        <NamedIndividual IRI="#Main_Room"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Schrute_Farm"/>
+        <NamedIndividual IRI="#Scranton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChapter"/>
+        <NamedIndividual IRI="#Season1"/>
+        <NamedIndividual IRI="#Chapter1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChapter"/>
+        <NamedIndividual IRI="#Season1"/>
+        <NamedIndividual IRI="#Chapter2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#genreIs"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#genreIs"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#FakeDocumentary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Season2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#AmazonPrime"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#actorName"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+        <Literal>Rainn Wilson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numberScenes"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#actorName"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+        <Literal>Steve Carell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numberScenes"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5000001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">70000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serieCreator"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <Literal>Greg Daniels</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAudience"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChapter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasScenes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSeason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSpinOff"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hisCountryIs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isActincIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBroadcastedOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPlaying"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takesPlace"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksAs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#genreIs"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAudience"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChapter"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScenes"/>
+        <Class IRI="#Chapter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpinOff"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hisCountryIs"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isActincIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFoundIn"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Office"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlaying"/>
+        <Class IRI="#Scene"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesPlace"/>
+        <Class IRI="#Scene"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksAs"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#genreIs"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChapter"/>
+        <Class IRI="#Chapter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScenes"/>
+        <Class IRI="#Scene"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpinOff"/>
+        <Class IRI="#SpinOff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hisCountryIs"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isActincIn"/>
+        <Class IRI="#Scene"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFoundIn"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlaying"/>
+        <Class IRI="#Music"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlace"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksAs"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Office"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Channel"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#actorName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#audience"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gender"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numberScenes"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#serieCreator"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#actorName"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#audience"/>
+        <Class IRI="#Season"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberScenes"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#serieCreator"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#actorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#audience"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">100000000</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <DataOneOf>
+            <Literal>Female</Literal>
+            <Literal>Male</Literal>
+            <Literal>Unknown</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberScenes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#serieCreator"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#BonusSales"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numberScenes"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#MainCharacter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numberScenes"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SecondaryCharacter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAudience"/>
+                <Variable IRI="urn:swrl:var#s"/>
+                <Variable IRI="urn:swrl:var#a"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#a"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#GoodSeason"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/t151651/ontologies/2022/3/Sales</IRI>
+        <Literal xml:lang="en">Sales department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accounting</IRI>
+        <Literal xml:lang="en">Accounting department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BonusSales</IRI>
+        <Literal xml:lang="en">If the character is a salesman.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Channel</IRI>
+        <Literal xml:lang="en">Channel broadcasting the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chapter</IRI>
+        <Literal xml:lang="en">Chapter of a season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Character of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal xml:lang="en">City where is the office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">Country of the city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Department</IRI>
+        <Literal xml:lang="en">Departments of the office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Dwight_Schrute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Dwight_Schrute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Genre</IRI>
+        <Literal xml:lang="en">Genre of the serie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GoodSeason</IRI>
+        <Literal xml:lang="en">If it has a lot of audiance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanResources</IRI>
+        <Literal xml:lang="en">The human resources department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">Location where the chapter takes place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MainCharacter</IRI>
+        <Literal xml:lang="en">If the character apears in more than 100 scenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Management</IRI>
+        <Literal xml:lang="en">Management department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Michael_Scott</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Michael_Scott_(The_Office)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Music</IRI>
+        <Literal xml:lang="en">Music played in the scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Office</IRI>
+        <Literal xml:lang="en">Office of the company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QA</IRI>
+        <Literal xml:lang="en">QA department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reception</IRI>
+        <Literal xml:lang="en">Reception department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scene</IRI>
+        <Literal xml:lang="en">Scenes of a chapter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Season</IRI>
+        <Literal xml:lang="en">Season of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SecondaryCharacter</IRI>
+        <Literal xml:lang="en">If the character apears in less than 100 scenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Series</IRI>
+        <Literal xml:lang="en">The series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpinOff</IRI>
+        <Literal xml:lang="en">Series spin off</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TheOffice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/The_Office_(American_TV_series)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#genreIs</IRI>
+        <Literal xml:lang="en">Genres of the serie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAudience</IRI>
+        <Literal xml:lang="en">Audience of a season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChapter</IRI>
+        <Literal xml:lang="en">Chapters of the season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCharacter</IRI>
+        <Literal xml:lang="en">The characters of the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasScenes</IRI>
+        <Literal xml:lang="en">The scenes of a chapter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeason</IRI>
+        <Literal xml:lang="en">Seasons of the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeason</IRI>
+        <Literal xml:lang="en">Serie has seasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSpinOff</IRI>
+        <Literal xml:lang="en">Spin off of the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hisCountryIs</IRI>
+        <Literal xml:lang="en">The country where the city is placed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isActincIn</IRI>
+        <Literal xml:lang="en">character plays the scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBroadcastedOn</IRI>
+        <Literal xml:lang="en">Channels where it is broadcasted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFoundIn</IRI>
+        <Literal xml:lang="en">Where the location is founded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal xml:lang="en">The city of the office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPlaying</IRI>
+        <Literal xml:lang="en">Music played in a scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#takesPlace</IRI>
+        <Literal xml:lang="en">where the scene takes place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksAs</IRI>
+        <Literal xml:lang="en">The department where the employee works</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksIn</IRI>
+        <Literal xml:lang="en">The office where the employee works</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
