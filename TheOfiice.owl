@@ -13,7 +13,11 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">Antology about The Office.</Literal>
+        <Literal xml:lang="en">Antology about The Office.
+
+Author: Javier Valls Catalá
+
+UOC</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
@@ -55,7 +59,7 @@
         <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Main"/>
+        <Class IRI="#MainCharacter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Management"/>
@@ -79,13 +83,13 @@
         <Class IRI="#Season"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SecondaryCharacter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Series"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpinOff"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#appearsIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#genreIs"/>
@@ -187,6 +191,12 @@
         <NamedIndividual IRI="#NewYork"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Scene1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scene2"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Schrute_Farm"/>
     </Declaration>
     <Declaration>
@@ -225,6 +235,9 @@
     <Declaration>
         <NamedIndividual IRI="#TheOffice"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
         <Class IRI="#Department"/>
@@ -246,7 +259,7 @@
         <Class IRI="#Department"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Main"/>
+        <Class IRI="#MainCharacter"/>
         <Class IRI="#Character"/>
     </SubClassOf>
     <SubClassOf>
@@ -261,6 +274,10 @@
         <Class IRI="#Reception"/>
         <Class IRI="#Department"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryCharacter"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
         <Class IRI="#Accounting"/>
@@ -268,6 +285,10 @@
         <Class IRI="#Management"/>
         <Class IRI="#QA"/>
         <Class IRI="#Reception"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MainCharacter"/>
+        <Class IRI="#SecondaryCharacter"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Channel"/>
@@ -375,6 +396,16 @@
         <NamedIndividual IRI="#AmazonPrime"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasScenes"/>
+        <NamedIndividual IRI="#Chapter1"/>
+        <NamedIndividual IRI="#Scene1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChapter"/>
+        <NamedIndividual IRI="#Chapter2"/>
+        <NamedIndividual IRI="#Scene2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#DunderMifflinNewYork"/>
         <NamedIndividual IRI="#NewYork"/>
@@ -390,89 +421,19 @@
         <NamedIndividual IRI="#Stamford"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season4"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season5"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season6"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season7"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season8"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Dwight_Schrute"/>
-        <NamedIndividual IRI="#Season9"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Main_Room"/>
         <NamedIndividual IRI="#Scranton"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season1"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Scene1"/>
+        <NamedIndividual IRI="#Schrute_Farm"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season4"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season5"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season6"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsIn"/>
-        <NamedIndividual IRI="#Michael_Scott"/>
-        <NamedIndividual IRI="#Season7"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Scene2"/>
+        <NamedIndividual IRI="#Main_Room"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -498,6 +459,26 @@
         <ObjectProperty IRI="#genreIs"/>
         <NamedIndividual IRI="#TheOffice"/>
         <NamedIndividual IRI="#FakeDocumentary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#TheOffice"/>
+        <NamedIndividual IRI="#Season2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isBroadcastedOn"/>
@@ -555,10 +536,6 @@
         <Literal>Greg Daniels</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#appearsIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAudience"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -614,10 +591,6 @@
         <ObjectProperty IRI="#worksIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#appearsIn"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#genreIs"/>
         <Class IRI="#Series"/>
@@ -682,10 +655,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
         <Class IRI="#Series"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#appearsIn"/>
-        <Class IRI="#Scene"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#genreIs"/>
         <Class IRI="#Genre"/>
@@ -796,7 +765,23 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#audience"/>
-        <Datatype abbreviatedIRI="xsd:long"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">100000000</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <DataOneOf>
+            <Literal>Female</Literal>
+            <Literal>Male</Literal>
+            <Literal>Unknown</Literal>
+        </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#numberScenes"/>
@@ -826,10 +811,6 @@
     </DLSafeRule>
     <DLSafeRule>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Character"/>
-                <Variable IRI="urn:swrl:var#c"/>
-            </ClassAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#numberScenes"/>
                 <Variable IRI="urn:swrl:var#c"/>
@@ -839,10 +820,37 @@
                 <Variable IRI="urn:swrl:var#n"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
             </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#Main"/>
+                <Class IRI="#MainCharacter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numberScenes"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SecondaryCharacter"/>
                 <Variable IRI="urn:swrl:var#c"/>
             </ClassAtom>
         </Head>
@@ -868,8 +876,38 @@
     </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/t151651/ontologies/2022/3/Sales</IRI>
+        <Literal xml:lang="en">Sales department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accounting</IRI>
+        <Literal xml:lang="en">Accounting department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BonusSales</IRI>
+        <Literal xml:lang="en">If the character is a salesman.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Channel</IRI>
         <Literal xml:lang="en">Channel broadcasting the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chapter</IRI>
+        <Literal xml:lang="en">Chapter of a season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Character of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal xml:lang="en">City where is the office</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -878,8 +916,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Department</IRI>
+        <Literal xml:lang="en">Departments of the office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Dwight_Schrute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Dwight_Schrute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Genre</IRI>
         <Literal xml:lang="en">Genre of the serie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GoodSeason</IRI>
+        <Literal xml:lang="en">If it has a lot of audiance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanResources</IRI>
+        <Literal xml:lang="en">The human resources department</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -888,13 +946,153 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MainCharacter</IRI>
+        <Literal xml:lang="en">If the character apears in more than 100 scenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Management</IRI>
+        <Literal xml:lang="en">Management department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Michael_Scott</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Michael_Scott_(The_Office)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Music</IRI>
+        <Literal xml:lang="en">Music played in the scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Office</IRI>
+        <Literal xml:lang="en">Office of the company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QA</IRI>
+        <Literal xml:lang="en">QA department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reception</IRI>
+        <Literal xml:lang="en">Reception department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scene</IRI>
+        <Literal xml:lang="en">Scenes of a chapter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Season</IRI>
+        <Literal xml:lang="en">Season of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SecondaryCharacter</IRI>
+        <Literal xml:lang="en">If the character apears in less than 100 scenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Series</IRI>
+        <Literal xml:lang="en">The series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SpinOff</IRI>
         <Literal xml:lang="en">Series spin off</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TheOffice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/The_Office_(American_TV_series)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#genreIs</IRI>
+        <Literal xml:lang="en">Genres of the serie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAudience</IRI>
+        <Literal xml:lang="en">Audience of a season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChapter</IRI>
+        <Literal xml:lang="en">Chapters of the season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCharacter</IRI>
+        <Literal xml:lang="en">The characters of the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasScenes</IRI>
+        <Literal xml:lang="en">The scenes of a chapter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeason</IRI>
+        <Literal xml:lang="en">Seasons of the series.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasSeason</IRI>
         <Literal xml:lang="en">Serie has seasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSpinOff</IRI>
+        <Literal xml:lang="en">Spin off of the series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hisCountryIs</IRI>
+        <Literal xml:lang="en">The country where the city is placed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isActincIn</IRI>
+        <Literal xml:lang="en">character plays the scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBroadcastedOn</IRI>
+        <Literal xml:lang="en">Channels where it is broadcasted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFoundIn</IRI>
+        <Literal xml:lang="en">Where the location is founded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal xml:lang="en">The city of the office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPlaying</IRI>
+        <Literal xml:lang="en">Music played in a scene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#takesPlace</IRI>
+        <Literal xml:lang="en">where the scene takes place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksAs</IRI>
+        <Literal xml:lang="en">The department where the employee works</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksIn</IRI>
+        <Literal xml:lang="en">The office where the employee works</Literal>
     </AnnotationAssertion>
 </Ontology>
 
