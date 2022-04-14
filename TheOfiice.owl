@@ -22,9 +22,6 @@
         <Class IRI="#Accounting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Audience"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#BonusSales"/>
     </Declaration>
     <Declaration>
@@ -47,6 +44,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodSeason"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HumanResources"/>
@@ -112,6 +112,9 @@
         <ObjectProperty IRI="#hisCountryIs"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isActincIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isBroadcastedOn"/>
     </Declaration>
     <Declaration>
@@ -140,6 +143,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberScenes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#serieCreator"/>
@@ -230,6 +236,10 @@
     <SubClassOf>
         <Class IRI="#BonusSales"/>
         <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodSeason"/>
+        <Class IRI="#Season"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HumanResources"/>
@@ -505,6 +515,11 @@
         <Literal>Male</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#numberScenes"/>
+        <NamedIndividual IRI="#Dwight_Schrute"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#actorName"/>
         <NamedIndividual IRI="#Michael_Scott"/>
         <Literal>Steve Carell</Literal>
@@ -513,6 +528,26 @@
         <DataProperty IRI="#gender"/>
         <NamedIndividual IRI="#Michael_Scott"/>
         <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numberScenes"/>
+        <NamedIndividual IRI="#Michael_Scott"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5000001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#audience"/>
+        <NamedIndividual IRI="#Season3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">70000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#serieCreator"/>
@@ -549,6 +584,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hisCountryIs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isActincIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -612,6 +651,10 @@
         <Class IRI="#City"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isActincIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFoundIn"/>
         <Class IRI="#Location"/>
     </ObjectPropertyDomain>
@@ -648,10 +691,6 @@
         <Class IRI="#Genre"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAudience"/>
-        <Class IRI="#Audience"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasChapter"/>
         <Class IRI="#Chapter"/>
     </ObjectPropertyRange>
@@ -674,6 +713,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hisCountryIs"/>
         <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isActincIn"/>
+        <Class IRI="#Scene"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFoundIn"/>
@@ -716,6 +759,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#numberScenes"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#serieCreator"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -725,10 +772,14 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#audience"/>
-        <Class IRI="#Audience"/>
+        <Class IRI="#Season"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#gender"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberScenes"/>
         <Class IRI="#Character"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -748,14 +799,73 @@
         <Datatype abbreviatedIRI="xsd:long"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#numberScenes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#serieCreator"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Audience</IRI>
-        <Literal xml:lang="en">Audience of the season</Literal>
-    </AnnotationAssertion>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#BonusSales"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numberScenes"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Main"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAudience"/>
+                <Variable IRI="urn:swrl:var#s"/>
+                <Variable IRI="urn:swrl:var#a"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#a"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#GoodSeason"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Channel</IRI>
