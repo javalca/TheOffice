@@ -1,0 +1,167 @@
+{
+  "@context" : {
+    "takesPlace" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#takesPlace",
+      "@type" : "@id"
+    },
+    "genreIs" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#genreIs",
+      "@type" : "@id"
+    },
+    "MainCharacter" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#MainCharacter"
+    },
+    "serieCreator" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#serieCreator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "worksAs" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksAs",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Country"
+    },
+    "isFoundIn" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isFoundIn",
+      "@type" : "@id"
+    },
+    "Music" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Music"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasChapter" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasChapter",
+      "@type" : "@id"
+    },
+    "Department" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Department"
+    },
+    "hasScenes" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasScenes",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Character"
+    },
+    "Reception" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Reception"
+    },
+    "GoodSeason" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#GoodSeason"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Location"
+    },
+    "Chapter" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Chapter"
+    },
+    "gender" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#gender"
+    },
+    "isBroadcastedOn" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isBroadcastedOn",
+      "@type" : "@id"
+    },
+    "hasSpinOff" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSpinOff",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "HumanResources" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#HumanResources"
+    },
+    "QA" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#QA"
+    },
+    "hisCountryIs" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hisCountryIs",
+      "@type" : "@id"
+    },
+    "numberScenes" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#numberScenes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isActincIn" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isActincIn",
+      "@type" : "@id"
+    },
+    "Sales" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/Sales"
+    },
+    "SecondaryCharacter" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SecondaryCharacter"
+    },
+    "Office" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Office"
+    },
+    "Accounting" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Accounting"
+    },
+    "isPlaying" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isPlaying",
+      "@type" : "@id"
+    },
+    "Scene" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Scene"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Series"
+    },
+    "Management" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Management"
+    },
+    "Channel" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Channel"
+    },
+    "BonusSales" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#BonusSales"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#City"
+    },
+    "worksIn" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#worksIn",
+      "@type" : "@id"
+    },
+    "audience" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#audience"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "SpinOff" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#SpinOff"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "actorName" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#actorName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Genre"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#Season"
+    },
+    "isLocatedIn" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#isLocatedIn",
+      "@type" : "@id"
+    },
+    "hasSeason" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasSeason",
+      "@type" : "@id"
+    },
+    "hasCharacter" : {
+      "@id" : "http://www.semanticweb.org/t151651/ontologies/2022/3/theOffice#hasCharacter",
+      "@type" : "@id"
+    }
+  }
+}
